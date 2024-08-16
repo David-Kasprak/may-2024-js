@@ -1,12 +1,18 @@
-let arrA = ['hello', 1, true];
+// function arrayDisplay (array) {
+//     document.write(`<ul>`)
+//     for (const arrayElement of array) {
+//         document.write(`<li>${arrayElement}</li>`)
+//     }
+//     document.write(`</ul>`)
+// }
+// arrayDisplay([1,2,3, 'hello', false]);
 
-function arrayDisplay (array) {
+const displayArray = (array) => {
     document.write(`<ul>`)
-    for (const arrayElement of array) {
-        document.write(`<li>${arrayElement}</li>`)
+    for (const item of array) {
+        document.write(`<li>${item}</li>`)
     }
     document.write(`</ul>`)
 }
 
-arrayDisplay(arrA);
-arrayDisplay([1,2,3, 'hello', false]);
+displayArray(['hello', 1, true]);
