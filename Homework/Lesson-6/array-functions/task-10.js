@@ -15,3 +15,28 @@ for (const suit of suits) {
     }
 }
 console.log(deck)
+
+const reduce = deck.reduce((acumulator, card) => {
+switch (card.cardSuit) {
+    case 'spade':
+        acumulator.spades.push(card);
+        break;
+    case 'diamond':
+        acumulator.diamonds.push(card);
+        break;
+    case 'heart':
+        acumulator.hearts.push(card);
+        break;
+    case 'clubs':
+        acumulator.clubs.push(card);
+        break;
+}
+        return acumulator;
+},
+    {
+        spades: [],
+        diamonds: [],
+        hearts: [],
+        clubs: []
+})
+console.log(reduce)
